@@ -1,0 +1,48 @@
+{
+    "name": "sifadi/core",
+    "description": "SDK PHP (framework-agnostic) para la API de Sifadi: timbra CFDI 4.0, cancela, descarga XML/PDF y consulta tu saldo de timbres.",
+    "keywords": ["sifadi", "cfdi", "sat", "facturacion", "factura electronica", "mexico", "timbrado", "pac", "sdk"],
+    "homepage": "https://sifadi.mx",
+    "license": "MIT",
+    "type": "library",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Sifadi",
+            "homepage": "https://sifadi.mx"
+        }
+    ],
+    "support": {
+        "docs": "https://sifadi.mx",
+        "issues": "https://github.com/sifadi/core/issues"
+    },
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13",
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sifadi\\Core\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sifadi\\Core\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "lint": "pint",
+        "lint:test": "pint --test"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
